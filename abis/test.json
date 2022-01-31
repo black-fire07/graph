@@ -1,0 +1,31 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "add",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      }
+    ],
+    "name": "Get",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "ad", "type": "address" },
+      { "internalType": "uint256", "name": "nu", "type": "uint256" }
+    ],
+    "name": "write",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

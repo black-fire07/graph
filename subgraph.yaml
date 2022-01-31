@@ -1,0 +1,23 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: test
+    network: chapel
+    source:
+      address: "0xbCCb1568c60FE148D84D2779274Fb10178Ce7a33"
+      abi: test
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Get
+      abis:
+        - name: test
+          file: ./abis/test.json
+      eventHandlers:
+        - event: Get(address,uint256)
+          handler: handleGet
+      file: ./src/mapping.ts
