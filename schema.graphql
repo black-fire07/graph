@@ -4,3 +4,5 @@ type ExampleEntity @entity {
   add: Bytes! # address
   balance: BigInt! # uint256
 }
+
+

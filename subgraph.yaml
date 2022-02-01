@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.2
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,6 +8,7 @@ dataSources:
     source:
       address: "0xbCCb1568c60FE148D84D2779274Fb10178Ce7a33"
       abi: test
+      startBlock: 16346885
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -21,3 +22,4 @@ dataSources:
         - event: Get(address,uint256)
           handler: handleGet
       file: ./src/mapping.ts
+# https://api.thegraph.com/subgraphs/name/black-fire07/nft
